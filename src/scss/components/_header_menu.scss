@@ -24,10 +24,11 @@ header {
   }
 }
 .logo {
-  border: 2px solid blue;
   background-image: url("../../images/I\ am.png");
   background-size: cover;
   background-position: center center;
+  background-color: color;
+  background-blend-mode: mode;
   width: 22vw;
   height: 19vh;
   
