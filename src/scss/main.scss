@@ -1,23 +1,28 @@
-@import "./fontawesome-free-6.0.0-web/scss/fontawesome.scss";
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Roboto:ital@1&display=swap');
+
+@import "./fontawesome-free-6.0.0-web/css/all.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Roboto:ital@1&display=swap");
 @import "./header.scss";
 @import "./landing-page.scss";
 @import "./sidebar.scss";
 //Variables
-$my-hobby-text: 'Mukta', sans-serif;
+$my-hobby-text: "Mukta", sans-serif;
 // colors
-$my-body-color:beige;
+$my-body-color: beige;
 /* body grid layout */
-body{
-    width:100vw;
-    height:100vh;
-    background-color: $my-body-color;
-   display: grid;
-   grid-template-rows: 15vh 85vh ;
-   grid-template-columns: 5vw 90vw;
-   grid-template-areas: 
-   "header header"
-   "sidebar main";
-   }
-
-
+/* body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $my-body-color;
+  display: grid;
+  grid-template-rows: 15vh 85vh;
+  grid-template-columns: 5vw 90vw;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+} */
+ i{
+     width: 2rem;
+     height: 3rem;
+     color: red;
+     background-color: orange;
+ }
