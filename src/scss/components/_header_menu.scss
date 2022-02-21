@@ -6,6 +6,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    .logo {
+      background-image: url("../../images/logo-5.png");
+      background-size: cover;
+      background-position: center center;
+      width: 18vw;
+      height: 15vh;
+          }
     ul {
       width: 60%;
       display: flex;
@@ -23,13 +30,4 @@ header {
     }
   }
 }
-.logo {
-  background-image: url("../../images/sangee-logo.png");
-  background-size: cover;
-  background-position: center center;
-  background-color: color;
-  background-blend-mode: mode;
-  width: 18vw;
-  height: 10vh;
-  
-}
+
