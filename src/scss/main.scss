@@ -1,15 +1,20 @@
-
-@import "./fontawesome-free-6.0.0-web/css/all.css";
-/* @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Roboto:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Roboto:ital@1&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 @import "./header.scss";
 @import "./landing-page.scss";
 @import "./sidebar.scss";
+@import "./aboutme.scss";
+
 //Variables
-$my-hobby-text: "Mukta", sans-serif;
+$my-header-navbar: 'Ubuntu', sans-serif;
+$my-heading-h2:'Roboto', sans-serif;
+$my-heading-h3:'Mukta', sans-serif;
+$my-p-text:'Mukta', sans-serif;
 // colors
 $my-body-color: beige;
+
 /* body grid layout */
-/* body {
+ body {
   width: 100vw;
   height: 100vh;
   background-color: $my-body-color;
@@ -19,10 +24,5 @@ $my-body-color: beige;
   grid-template-areas:
     "header header"
     "sidebar main";
-} */
- i{
-     width: 2rem;
-     height: 3rem;
-     color: red;
-     background-color: orange;
- }
+}
+ 
