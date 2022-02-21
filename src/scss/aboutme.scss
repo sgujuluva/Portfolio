@@ -30,13 +30,31 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         width:25%;
         border-radius: 20%;
         }
-}
+
     p{
         padding:2rem;
         line-height: 1.5;
         border:2px solid grey;
         width:30%;
-        height:50%;
+        height:40%;
      /*  font-family: $my-p-text;  */ 
     }
+  }
+  .buttons{
+     
+     width:50%;
+     height:7%;
+     display:flex ;
+     
+      :first-child{
+      font-weight: 600;
+      font-size: 3rem;      
+        border:1px solid black;
+      }
+     &:last-child{
+        font-weight: 600;
+        font-size: 3rem;
+        border:1px solid black;
+         }
+     } 
     
