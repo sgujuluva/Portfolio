@@ -1,0 +1,23 @@
+/* hobbies container */
+.hobbies {
+  width: 100vw;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  ul {
+    li:hover {
+      width: 20%;
+      color: orange;
+    }
+  }
+}
+/* garden section */
+.garden-images{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1rem;
+    img{
+        padding:1%;
+    border: 0.2rem solid grey;
+}
+}
