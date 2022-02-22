@@ -1,15 +1,12 @@
-@import "https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Roboto:ital@1&display=swap";
-@import 'https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Roboto:ital@1&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 @import "./header.scss";
 @import "./landing-page.scss";
 @import "./sidebar.scss";
 @import "./aboutme.scss";
 
 //Variables
-$my-header-navbar: 'Ubuntu', sans-serif;
-$my-heading-h2:'Roboto', sans-serif;
-$my-heading-h3:'Mukta', sans-serif;
-$my-p-text:'Mukta', sans-serif;
+$my-text-font: 'Roboto', sans-serif;
+
 // colors
 $my-body-color: beige;
 
@@ -18,6 +15,7 @@ $my-body-color: beige;
   width: 100vw;
   height: 100vh;
   background-color: $my-body-color;
+  font-family:$my-text-font ;
   display: grid;
   grid-template-rows: 15vh 85vh;
   grid-template-columns: 5vw 90vw;
@@ -31,6 +29,5 @@ p{
   border:2px solid grey;
   width:30%;
   height:40%;
-/* font-family: $my-p-text;  */ 
 }
  
