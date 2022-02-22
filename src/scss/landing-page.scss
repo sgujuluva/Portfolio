@@ -10,21 +10,23 @@
 .main-text {
   margin-top: 2%;
   line-height: 1.5rem;
-}
-.main-text h3 {
-  font-size: 1.7rem;
-}
-.main-text h2 {
-  font-size: 3rem;
-  color: orange;
-}
-.main-text span {
-  font-size: 2rem;
-  color: black;
-}
-.main-text p {
-  font-size: 2rem;
-}
+  h3 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 3rem;
+    color: orange;
+  }
+  span {
+    font-size: 1.5rem;
+    color: black;
+  }
+  p {
+    font-size: 2rem;
+    font-weight:500;
+  }
+  }
+
 /* Hire me -button */
 .main-text button {
   width: 40%;
