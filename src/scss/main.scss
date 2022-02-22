@@ -3,12 +3,16 @@
 @import "./landing-page.scss";
 @import "./sidebar.scss";
 @import "./aboutme.scss";
+@import "./skillset.scss";
+@import "./hobby.scss";
+@import "./contact.scss";
 
 //Variables
 $my-text-font: 'Roboto', sans-serif;
 
 // colors
 $my-body-color: beige;
+$my-text-color:orange;
 
 /* body grid layout */
  body {
@@ -23,11 +27,5 @@ $my-body-color: beige;
     "header header"
     "sidebar main";
 }
-/* p{
-  padding:2rem;
-  line-height: 1.5;
-  border:2px solid grey;
-  width:30%;
-  height:40%;
-} */
+
  

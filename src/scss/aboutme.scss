@@ -20,11 +20,11 @@
     font-weight: 600;
     &:before {
         content: "--";
-        color:orange;
+        color:$my-text-color;
       }
       &:after {
         content: "--";
-        color:orange;
+        color:$my-text-color;
       }
   }
   
@@ -44,7 +44,7 @@
     line-height: 2;
     width: 60%;
     span{
-        color:orange;
+        color:$my-text-color;
     }
   }
 }
