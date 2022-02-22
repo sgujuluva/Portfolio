@@ -33,60 +33,73 @@ body {
   }
 }
 /* h3 styling */
-h3{
-  
+h3 {
 }
 /* creative skills section */
-.myskills{
-  .myskills-text{
-   
-    p{
-            font-size: 1.2rem;
-            line-height: 2;
+.myskills {
+  .myskills-text {
+    p {
+      font-size: 1.2rem;
+      line-height: 2;
     }
   }
 }
 /*tools section */
-.tools{
-  li{
-font-size: 1.3rem;
-  
-  &:hover{
-        color:orange;
-        font-weight: 600;
-         }
-}
+.tools {
+  width:20%;
+  li {
+    font-size: 1.3rem;
+
+    &:hover {
+      color:$my-text-color;
+      font-weight: 600;
+    }
+  }
 }
 /* project section */
-.projects{
-  display:flex;
-  flex-wrap: wrap;
- }
-.projects .box-container{
- width:30%;
+.projects {
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+  .box-container {
+    width: 50%;
+    .box {
+      flex: 1 1 30rem;
+      width: 45rem;
+      height: 30rem;
+      position: relative;
+      overflow: hidden;
+      border: 0.2rem solid grey;
+      img {
+        padding: 1rem;
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+        /*    position:relative;
+        z-index:1; */
+      }
+    }
+  }
 }
-.projects .box-container .box{
-
- flex:1 1 30rem;
- height:25rem;
- position: relative;
- overflow: hidden;
- border:0.2rem solid grey;
- box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
-}
-.projects .box-container img{
-  padding:3%;
-    width:30rem;
-  height:25rem;
-  object-fit:cover;
-/*    position:relative;
-  z-index:1; */
-}
-/* .projects .box-container .box h3{
-  position:absolute;
-  bottom:0.5rem;
-  left:1rem;
-  font-size: 2.5rem;
-  color:#333;
+.projects .box-container .box h3 {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: $my-text-color;
   text-transform: uppercase;
-} */
+  
+}
+.projects .icons {
+ position:absolute;
+bottom:7%;
+left:22%;
+    a{
+    i{
+      font-size: 1.7rem;
+      color:black;
+      background: orange;
+        }
+
+  }
+}
