@@ -1,0 +1,26 @@
+/* all html page titles */
+.page-title{
+    margin-top: 3%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.1;
+    h2 {
+      span {
+        color: $my-text-color;
+      }
+    }
+    h4 {
+      font-weight: 600;
+      &:before {
+        content: "--";
+        color: $my-text-color;
+      }
+      &:after {
+        content: "--";
+        color: $my-text-color;
+      }
+    }
+  }

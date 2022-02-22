@@ -7,34 +7,9 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    .myskills-heading {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      line-height: 0.1;
-      h2 {
-        span {
-          color: $my-text-color;
-        }
-      }
-      h4 {
-        font-weight: 600;
-        &:before {
-          content: "--";
-          color: $my-text-color;
-        }
-        &:after {
-          content: "--";
-          color: $my-text-color;
-        }
-      }
-    }
   }
 }
-/* h3 styling */
-h3 {
-}
+
 /* creative skills section */
 .myskills {
   .myskills-text {
@@ -46,12 +21,12 @@ h3 {
 }
 /*tools section */
 .tools {
-  width:20%;
+  width: 20%;
   li {
     font-size: 1.3rem;
 
     &:hover {
-      color:$my-text-color;
+      color: $my-text-color;
       font-weight: 600;
     }
   }
@@ -87,31 +62,30 @@ h3 {
   left: 1rem;
   font-size: 1.5rem;
   color: black;
-    }
-  .projects .box-container .box h2 {
-    position: absolute;
-    bottom: 0.5rem;
-    left: 11rem;
-    font-size: 1.52rem;
-    color: $my-text-color;
-    text-transform: uppercase;
-    }
+}
+.projects .box-container .box h2 {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 11rem;
+  font-size: 1.52rem;
+  color: $my-text-color;
+  text-transform: uppercase;
+}
 .projects .icons {
- position:absolute;
-bottom:7%;
-left:60%;
-    a{
-       i{
+  position: absolute;
+  bottom: 7%;
+  left: 60%;
+  a {
+    i {
       font-size: 1.7rem;
-      color:black;
-      &:hover{
-        background:orange;
+      color: black;
+      &:hover {
+        background: orange;
       }
-        }
-
+    }
   }
 }
 /* circle arrows */
-.skillset .circle-arrows{
-  margin-top:2%;
+.skillset .circle-arrows {
+  margin-top: 2%;
 }

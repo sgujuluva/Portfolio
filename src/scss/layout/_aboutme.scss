@@ -3,31 +3,6 @@
   width: 100vw;
   height: 90vh;
 }
-.intro {
-  margin-top: 3%;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 0.1;
-  h2 {
-    span {
-      color: $my-text-color;
-    }
-  }
-  h4 {
-    font-weight: 600;
-    &:before {
-      content: "--";
-      color: $my-text-color;
-    }
-    &:after {
-      content: "--";
-      color: $my-text-color;
-    }
-  }
-}
 .aboutme {
   width: 100vw;
   height: 75vh;
