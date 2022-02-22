@@ -6,9 +6,21 @@
   ul {
     li:hover {
       width: 20%;
-      color: orange;
+      color: $my-text-color;
     }
   }
+}
+/* span */
+span{
+    color:$my-text-color;
+}
+/* food-images section */
+.food-images{
+    display:flex;
+    h4{
+       text-align: center;
+       background-color: $my-text-color;
+    }
 }
 /* garden section */
 .garden-images{
@@ -18,6 +30,16 @@
     gap:1rem;
     img{
         padding:1%;
+    border: 0.2rem solid grey;
+}
+}
+/* food images */
+.food-images{
+    display:flex;
+    justify-content: center;
+    gap:3rem;
+    img{
+        padding:3%;
     border: 0.2rem solid grey;
 }
 }
