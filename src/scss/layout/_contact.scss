@@ -35,3 +35,31 @@
         }
     }
 }
+/* form */
+.forms{
+    margin-top:5%;
+      gap:1.5rem;
+    form{
+       display:flex;
+       flex-direction: column;
+        flex:0.3;
+        padding:0 2rem;
+        box-shadow: 0 .5rem 1 rem rgba(0,0,0,0.1);
+        border-radius: 0.5rem;
+        label{
+            font-size: 1.2rem;   
+        }
+        input, textarea{
+            font-size: 1.2rem;
+            margin:2%;
+            width:20rem;
+            height:3rem;
+      &:last-child{
+          width:10%;
+          background:$my-text-color;
+          font-size: 1.2rem;
+          border:none;
+      }
+        }
+    }
+}
