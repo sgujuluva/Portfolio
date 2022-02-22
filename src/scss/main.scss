@@ -1,18 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
-@import "./header.scss";
-@import "./landing-page.scss";
-@import "./sidebar.scss";
-@import "./aboutme.scss";
-@import "./skillset.scss";
-@import "./hobby.scss";
-@import "./contact.scss";
+@import "./layout/_layout.dir";
+@import "./abstract/_abstract-dir";
 
-//Variables
-$my-text-font: 'Roboto', sans-serif;
-
-// colors
-$my-body-color: beige;
-$my-text-color:orange;
 
 /* body grid layout */
  body {

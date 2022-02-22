@@ -4,30 +4,29 @@
   height: 90vh;
 }
 .intro {
-    margin-top:3%;
+  margin-top: 3%;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- line-height: 0.1;
-  h2{
-      span{
-          color:$my-text-color;
-      }
+  line-height: 0.1;
+  h2 {
+    span {
+     /*  color:$my-text-color; */
+    }
   }
   h4 {
     font-weight: 600;
     &:before {
-        content: "--";
-        color:$my-text-color;
-      }
-      &:after {
-        content: "--";
-        color:$my-text-color;
-      }
+      content: "--";
+      /* color:$my-text-color; */
+    }
+    &:after {
+      content: "--";
+      /*  color:$my-text-color; */
+    }
   }
-  
 }
 .aboutme {
   width: 100vw;
@@ -40,11 +39,11 @@
     border-radius: 50%;
   }
   p {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
     line-height: 2;
     width: 60%;
-    span{
-        color:$my-text-color;
+    span {
+      color: orange;
     }
   }
 }

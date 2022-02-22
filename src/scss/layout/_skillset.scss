@@ -1,0 +1,56 @@
+/* skill set page */
+body {
+  width: 100vw;
+  height: 100vh;
+  /* heading */
+  .skillset {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    .myskills-heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        span {
+          color: orange;
+        }
+      }
+      h4 {
+        font-style: italic;
+      }
+    }
+  }
+}
+/* h3 styling */
+h3{
+  margin-left:2%;
+}
+/* creative skills section */
+.myskills{
+  .myskills-text{
+   
+    p{
+      margin-left:3%;
+      font-size: 1.3rem;
+    }
+  }
+}
+/*tools section */
+.tools{
+  li{
+font-size: 1.3rem;
+  
+  &:hover{
+        color:orange;
+        font-weight: 600;
+         }
+}
+}
+
+/* project section */
+/* .projects .box-container{
+display:flex;
+
+} */
