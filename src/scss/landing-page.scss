@@ -1,54 +1,48 @@
 /* main-content */
 .main-content {
-    grid-area: main;
-    width: 100vw;
-    height: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .main-text {
-    margin-top:2%;
-    line-height: 3rem;
-  }
-  .main-text h1 {
-    font-size: 2rem;
-  }
-  .main-text h2 {
-    font-size: 3rem;
-    color:orange;
-  }
-  .main-text span {
-        font-size: 2rem;
-        color:black;
-  }
-  .main-text p {
-    font-size: 2rem;
-       /*  font-weight: 600; */
-  }
-  /* Hire me -button */
-  .main-text button {
-    width: 20%;
-    height: 3rem;
-    font-size: 1.2rem;
-    background: black;
-    color: white;
-   /*  border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px; */
-    border: none;
-    border-radius: 20px;
-  }
-  /* .main-text button:hover {
-    border-radius: 15px;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0; 
-  } */
-  /* my image */
-  .image img {
-    width: 25vw;
-     }
-  /* animation */
-  /* .main-text h2 {
+  grid-area: main;
+  width: 100vw;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-text {
+  margin-top: 2%;
+  line-height: 1.5rem;
+}
+.main-text h3 {
+  font-size: 1.7rem;
+}
+.main-text h2 {
+  font-size: 3rem;
+  color: orange;
+}
+.main-text span {
+  font-size: 2rem;
+  color: black;
+}
+.main-text p {
+  font-size: 2rem;
+}
+/* Hire me -button */
+.main-text button {
+  width: 40%;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: orange;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* my image */
+.image img {
+  width: 25vw;
+}
+/* animation */
+/* .main-text h2 {
     animation-duration: 3s;
     animation-name: pop;
   }
@@ -64,4 +58,3 @@
       color: blue;
     }
   } */
-  
