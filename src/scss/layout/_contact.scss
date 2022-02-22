@@ -1,0 +1,37 @@
+/* contact page */
+.contact{
+  
+    width:100vw;
+    .icons-container{
+        margin-top: 2%;
+        display:flex;
+        flex-wrap: wrap;
+        gap:2rem;
+        .icons{
+         
+            flex:0.3;
+            text-align: center;
+            padding:2rem;
+            background:white;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+            border-radius: 0.5rem;
+            i{
+                height:5rem;
+                width:5rem;
+                line-height: 5rem;
+                font-size: 2rem;
+                background: $my-text-color;
+                color:white;
+                border-radius: 50%;
+            }
+            h3{
+               font-size: 1.5rem;
+               /* padding:0.5rem 0; */
+            }
+            p{
+                color:grey;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
