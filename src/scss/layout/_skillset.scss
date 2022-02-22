@@ -86,19 +86,27 @@ flex-wrap: wrap;
   bottom: 0.5rem;
   left: 1rem;
   font-size: 1.5rem;
-  color: $my-text-color;
-  text-transform: uppercase;
-  
-}
+  color: black;
+    }
+  .projects .box-container .box h2 {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 11rem;
+    font-size: 1.52rem;
+    color: $my-text-color;
+    text-transform: uppercase;
+    }
 .projects .icons {
  position:absolute;
 bottom:7%;
-left:22%;
+left:60%;
     a{
-    i{
+       i{
       font-size: 1.7rem;
       color:black;
-      background: orange;
+      &:hover{
+        background:orange;
+      }
         }
 
   }
