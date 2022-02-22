@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
-@import "./layout/_layout.dir";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
 @import "./abstract/_abstract-dir";
+@import "./layout/_layout.dir";
 
 
 /* body grid layout */
- body {
+body {
   width: 100vw;
   height: 100vh;
   background-color: $my-body-color;
-  font-family:$my-text-font ;
+  font-family: $my-text-font;
   display: grid;
   grid-template-rows: 15vh 85vh;
   grid-template-columns: 5vw 90vw;
@@ -16,5 +16,3 @@
     "header header"
     "sidebar main";
 }
-
- 
