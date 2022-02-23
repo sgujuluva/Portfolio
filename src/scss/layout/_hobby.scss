@@ -177,14 +177,8 @@ span{
     left:30%;
     top:90%;
     transform: translate(-50%,-50%);
-    animation: zoom-out 3s linear infinite;
+   
  }
-}
-/* animation food images */
-@keyframes zoom-out {
-  100%{
-    width:80%;
-  }
 }
 /* food animation effect */
 .food1{
@@ -199,7 +193,7 @@ span{
 .food4{
   animation:food4 10s  linear infinite;
 }
-/* @keyframes food1 {
+@keyframes food1 {
   0%{
     visibility: visible;
   }
@@ -216,7 +210,7 @@ span{
     visibility: visible;
   }
   
-} */
+}
 @keyframes food2 {
   0%{
     visibility: hidden;
