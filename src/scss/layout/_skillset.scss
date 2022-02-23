@@ -7,16 +7,20 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    h2{
+      margin:1%;
+    }
   }
 }
 
 /* creative skills section */
 .myskills {
+  margin-left:2%;
+  line-height: 2;
   .myskills-text {
     p {
       font-size: 1.2rem;
-      line-height: 2;
-    }
+     }
   }
 }
 /*tools section */
@@ -58,7 +62,7 @@ body {
 }
 .projects .box-container .box h3 {
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0.9rem;
   left: 1rem;
   font-size: 1.5rem;
   color: black;
@@ -73,7 +77,7 @@ body {
 }
 .projects .icons {
   position: absolute;
-  bottom: 7%;
+  bottom: 4%;
   left: 60%;
   a {
     i {
