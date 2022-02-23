@@ -95,6 +95,49 @@ flex-wrap: wrap;
     }
   }
   /* skillset page */
+  .myskills {
+       .myskills-text {
+      p {
+        font-size: 0.8rem;
+       }
+    }
+  }
+  .tools li {
+    font-size: 0.8rem;
+}
+.skillset h2{
+    font-size: 1.2rem;
+}
+/* project section */
+.projects{
+  
+.box-container{
+    width:80%;
+    .box{
+        width:120%;
+        .img{
+            border:2px solid red;
+      width:50%;
+        }
+        h3{
+font-size: 0.9rem;
+        }
+        h2{
+            font-size: 1rem;
+        }
+        .icons{
+            font-size: 0.5rem;
+            position: absolute;
+            bottom: 2%;
+            left: 38%;
+        }
+    }
+ }
+}
+/* circle arrows */
+.skillset .circle-arrows {
+    margin-top: 10%;
+  }
   /* hobbies page */
   /* contact me page */
   /* circle-arrows */
