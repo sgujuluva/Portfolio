@@ -18,10 +18,9 @@ line-height: 2;
     }
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     color: $my-text-color;
-   /*  animation:textup 10s linear infinite;
-    transform: translateY(100px); */
+  
   }
   span {
     font-size: 1.5rem;
@@ -34,7 +33,7 @@ line-height: 2;
     transform: translateY(100px);
   }
   }
-  /* animation on welcome to my portfolio h3 */
+  /* animation on welcome to my portfolio h3 & p */
   @keyframes textup{
     10%{
       transform:translateY(0px);
@@ -46,7 +45,8 @@ line-height: 2;
 
 /* Hire me -button */
 .main-text button {
-  width: 40%;
+  margin-top: 5%;
+  width: 50%;
   height: 3rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -59,21 +59,11 @@ line-height: 2;
 /* my image */
 .image img {
   width: 25vw;
+  animation: zoom-out 3s linear infinite;
 }
-/* animation */
-/* .main-text h2 {
-    animation-duration: 3s;
-    animation-name: pop;
+/* animation image */
+@keyframes zoom-out {
+  100%{
+    width:80%;
   }
-  @keyframes pop {
-    0% {
-      color: red;
-    }
-    50% {
-      transform: scale(1.5);
-      color: green;
-    }
-    100% {
-      color: blue;
-    }
-  } */
+}
