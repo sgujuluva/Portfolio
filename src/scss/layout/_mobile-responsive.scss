@@ -1,10 +1,76 @@
-
-@media only screen and (max-width:450px){
+@media only screen and (max-width: 450px) {
+  /* landing page */
+  .side-menu {
+    display: none;
+  }
+  /* header logo */
+  header {
+    border: 2px solid blue;
+  }
+  .logo {
+    border: 2px solid red;
+    width: 100vw;
+  }
+  /* main-text */
+  .main-content {
+       flex-direction: column;
+  }
+  .main-text {
+    line-height: 1;
+    h3 {
+      font-size: 1rem;
+      transform: translateY(10px);
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: $my-text-color;
+    }
+    span {
+      font-size: 1rem;
+      color: black;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      animation: textup 5s linear infinite;
+      transform: translateY(10px);
+    }
+  }
+  @keyframes textup {
+    10% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  /* Hire me -button */
+  .main-text button {
+    width: 90%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  /* my image */
+  .image img {
+    width: 10vw;
+  }
+  /* social-icons */
+  .social-icons {
+    border: 2px solid pink;
+    flex-direction: row;
+  }
+/* aboutme page */
+.aboutme{
+    display:flex;
+flex-direction: column;
+p{
+    font-size:0.5rem;
+}
+}
 }
 
-
-@media only screen and (min-width:750px){
-    .hamburger{
-        display:none;
-    }
+@media only screen and (min-width: 750px) {
+  .hamburger {
+    display: none;
+  }
 }

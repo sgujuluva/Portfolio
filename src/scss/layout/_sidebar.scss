@@ -6,26 +6,11 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  a {
-    &:first-child {
+  a {    
       color: black;
-    }
-
-    &:last-child {
-      color: #0077b5;
-    }
-    i {
+       i {
       font-size: 3rem;
     }
   }
 }
-/*  .social-icons a i{
-        font-size: 3rem;
-    }
-    .social-icons a:first-child{
-        color: #0077b5;
-        }
-      
-    .social-icons a:last-child{
-    color: #4267B2;
-    } */
+
