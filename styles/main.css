@@ -184,6 +184,29 @@ header nav ul li a:hover {
   color: orange;
 }
 
+/* hamburger menu */
+.hamburger {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 2rem;
+  height: 2rem;
+  /* border: 2px red dashed; */
+}
+
+.hamburger div {
+  width: 2rem;
+  background-color: orange;
+  border-radius: 10%;
+  border: 2px orange solid;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /* hobbies container */
 .hobbies {
   margin-left: 15%;
@@ -201,36 +224,6 @@ span {
   color: orange;
 }
 
-/* /* food-images section */
-/* .food-images{
-    display:flex;
-    h4{
-       text-align: center;
-       background-color: $my-text-color;
-    }
-} */
-/* garden section */
-/* .garden-images{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:1rem;
-    img{
-        padding:1%;
-    border: 0.2rem solid grey;
-}
-} */
-/* food images */
-/* .food-images{
-    display:flex;
-    justify-content: center;
-    gap:3rem;
-    margin-bottom: 0.5%;
-    img{
-        padding:3%;
-    border: 0.2rem solid grey;
-}
-} */
 /* image slider with animation */
 .banner1, .banner2, .banner3, .banner4 {
   width: 70%;
@@ -365,15 +358,8 @@ span {
   left: 30%;
   top: 90%;
   transform: translate(-50%, -50%);
-  animation: zoom-out 3s linear infinite;
 }
 
-/* animation food images */
-@keyframes zoom-out {
-  100% {
-    width: 80%;
-  }
-}
 /* food animation effect */
 .food1 {
   animation: food1 10s linear infinite;
@@ -391,24 +377,23 @@ span {
   animation: food4 10s linear infinite;
 }
 
-/* @keyframes food1 {
-  0%{
+@keyframes food1 {
+  0% {
     visibility: visible;
   }
-  25%{
+  25% {
     visibility: visible;
   }
-  50%{
+  50% {
     visibility: hidden;
   }
-  75%{
+  75% {
     visibility: hidden;
   }
-  100%{
+  100% {
     visibility: visible;
   }
-
-} */
+}
 @keyframes food2 {
   0% {
     visibility: hidden;
@@ -484,9 +469,6 @@ span {
   animation: textup 5s linear infinite;
   transform: translateY(100px);
 }
-.main-text h3 span {
-  /* color:$my-text-color; */
-}
 .main-text h2 {
   font-size: 2.3rem;
   color: orange;
@@ -546,26 +528,13 @@ span {
   justify-content: space-evenly;
   align-items: center;
 }
-.social-icons a:first-child {
+.social-icons a {
   color: black;
-}
-.social-icons a:last-child {
-  color: #0077b5;
 }
 .social-icons a i {
   font-size: 3rem;
 }
 
-/*  .social-icons a i{
-        font-size: 3rem;
-    }
-    .social-icons a:first-child{
-        color: #0077b5;
-        }
-
-    .social-icons a:last-child{
-    color: #4267B2;
-    } */
 /* skill set page */
 body {
   width: 100vw;
@@ -577,11 +546,17 @@ body .skillset {
   display: flex;
   flex-direction: column;
 }
+body .skillset h2 {
+  margin: 1%;
+}
 
 /* creative skills section */
+.myskills {
+  margin-left: 2%;
+  line-height: 2;
+}
 .myskills .myskills-text p {
   font-size: 1.2rem;
-  line-height: 2;
 }
 
 /*tools section */
@@ -623,7 +598,7 @@ body .skillset {
 
 .projects .box-container .box h3 {
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0.9rem;
   left: 1rem;
   font-size: 1.5rem;
   color: black;
@@ -640,7 +615,7 @@ body .skillset {
 
 .projects .icons {
   position: absolute;
-  bottom: 7%;
+  bottom: 4%;
   left: 60%;
 }
 .projects .icons a i {
@@ -656,6 +631,150 @@ body .skillset {
   margin-top: 2%;
 }
 
+@media only screen and (max-width: 450px) {
+  /* landing page */
+  .side-menu {
+    display: none;
+  }
+
+  /* grid layout */
+  /* body {
+    display: grid;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";      
+  } */
+  /* hamburger side menu font */
+  header {
+    /*   grid-area: header; */
+  }
+  header nav .logo {
+    width: 60vw;
+    height: 20vh;
+  }
+  header nav ul li a {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  /* main-text */
+  .main-content {
+    /* grid-area: main; */
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .main-text {
+    line-height: 1;
+  }
+  .main-text h3 {
+    /* welcome to my portfolio */
+    font-size: 1rem;
+    animation: none;
+  }
+  .main-text h2 {
+    /* my name */
+    font-size: 1.5rem;
+  }
+  .main-text span {
+    font-size: 1rem;
+  }
+  .main-text p {
+    /* web dev */
+    font-size: 1rem;
+    animation: none;
+  }
+
+  .social-icons {
+    /* grid-area: footer; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 97%;
+    height: 10%;
+  }
+  .social-icons a i {
+    font-size: 1.5rem;
+  }
+
+  /* Hire me -button */
+  .main-text button {
+    width: 70%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  /* my image */
+  .image img {
+    width: 50vw;
+    animation: none;
+  }
+
+  /* aboutme page */
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutme p {
+    font-size: 0.5rem;
+  }
+
+  /* skillset page */
+  .myskills .myskills-text p {
+    font-size: 0.8rem;
+  }
+
+  .tools li {
+    font-size: 0.8rem;
+  }
+
+  .skillset h2 {
+    font-size: 1.2rem;
+  }
+
+  /* project section */
+  .projects .box-container {
+    width: 80%;
+  }
+  .projects .box-container .box {
+    width: 120%;
+  }
+  .projects .box-container .box .img {
+    border: 2px solid red;
+    width: 50%;
+  }
+  .projects .box-container .box h3 {
+    font-size: 0.9rem;
+  }
+  .projects .box-container .box h2 {
+    font-size: 1rem;
+  }
+  .projects .box-container .box .icons {
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 2%;
+    left: 38%;
+  }
+
+  /* circle arrows */
+  .skillset .circle-arrows {
+    margin-top: 10%;
+  }
+
+  /* hobbies page */
+  /* contact me page */
+  /* circle-arrows */
+}
+@media only screen and (min-width: 750px) {
+  .hamburger {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
