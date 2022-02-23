@@ -1,11 +1,27 @@
 @media only screen and (max-width: 450px) {
   /* landing page */
-  .side-menu {
+ .side-menu {
     display: none;
   }
+  /* grid layout */
+  /* body {
+    display: grid;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";      
+  } */
   /* hamburger side menu font */
   header {
+    /*   grid-area: header; */
+        
     nav {
+        .logo {
+            width: 60vw;
+            height: 20vh;
+          }
       ul {
         li {
           a {
@@ -16,53 +32,60 @@
       }
     }
   }
-  /* header logo */
-  header {
-    nav {
-      .logo {
-        width: 60vw;
-        height: 20vh;
-      }
-    }
-  }
+  
   /* main-text */
   .main-content {
-    flex-direction: column;
+      /* grid-area: main; */
+  
+display:flex;
+flex-direction:row-reverse;
+flex-wrap: wrap;
+
   }
   .main-text {
     line-height: 1;
-    h3 {
+      h3 { /* welcome to my portfolio */
       font-size: 1rem;
       animation: none;
     }
-    h2 {
+    h2 { /* my name */
       font-size: 1.5rem;
          }
     span {
       font-size: 1rem;
          }
-    p {
+    p {/* web dev */
       font-size: 1rem;
           animation: none;
          }
   }
+  .social-icons{
+      /* grid-area: footer; */
+       display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      position:absolute;
+      top:97%;
+      height:10%;
+      a{
+          i{
+              font-size: 1.5rem;
+          }
+      }
+  }
  
   /* Hire me -button */
-  .main-text button {
-    width: 90%;
+   .main-text button {
+    width: 70%;
     height: 2rem;
     font-size: 1rem;
-  }
+  }  
   /* my image */
   .image img {
-    width: 10vw;
+    width: 50vw;
     animation: none;
   }
-  /* social-icons */
-  .social-icons {
-    border: 2px solid pink;
-    flex-direction: row;
-  }
+ 
   /* aboutme page */
   .aboutme {
     display: flex;
