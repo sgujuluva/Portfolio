@@ -47,18 +47,26 @@ span{
 
 /* image slider with animation */
 .banner1, .banner2, .banner3, .banner4{
-  width:100%;
+  width:70%;
   height:50%;
   position:absolute;
   left:30%;
   top:50%;
   img{
-    width:70%;
+    width:50%;
     position: absolute;
     left:30%;
     top:90%;
     transform: translate(-50%,-50%);
   }
+}
+/* text on image */
+.text-box{
+  width:90%;
+  position:absolute;
+  top:40%;
+  left:10%;
+  color:beige;
 }
 /* animation name */
 .banner1{
