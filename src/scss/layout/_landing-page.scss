@@ -8,10 +8,11 @@
   align-items: center;
 }
 .main-text {
-  margin-top: 2%;
-  line-height: 1.5rem;
+line-height: 2;
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    animation:textup 5s linear infinite;
+    transform: translateY(100px);
     span{
       /* color:$my-text-color; */
     }
@@ -19,6 +20,8 @@
   h2 {
     font-size: 3rem;
     color: $my-text-color;
+   /*  animation:textup 10s linear infinite;
+    transform: translateY(100px); */
   }
   span {
     font-size: 1.5rem;
@@ -27,7 +30,18 @@
   p {
     font-size: 1.5rem;
     font-weight:500;
+    animation:textup 5s linear infinite;
+    transform: translateY(100px);
   }
+  }
+  /* animation on welcome to my portfolio h3 */
+  @keyframes textup{
+    10%{
+      transform:translateY(0px);
+    }
+    100%{
+      transform:translateY(0px);
+    }
   }
 
 /* Hire me -button */
