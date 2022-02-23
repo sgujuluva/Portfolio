@@ -1,5 +1,6 @@
 /* hobbies container */
 .hobbies {
+  margin-left:15%;
   width: 100vw;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -51,43 +52,44 @@ span{
   height:50%;
   position:absolute;
   left:30%;
-  top:50%;
+  top:40%;
   img{
     width:50%;
     position: absolute;
     left:30%;
     top:90%;
     transform: translate(-50%,-50%);
-  }
+     }
 }
 /* text on image */
 .text-box{
   width:90%;
   position:absolute;
-  top:40%;
+  top:30%;
   left:10%;
   color:beige;
-}
+  }
 /* animation name */
 .banner1{
-  animation:slide1 12s linear infinite;
+  animation:slide1 10s linear infinite;
 }
 .banner2{
-  animation:slide2 12s linear infinite;
+  animation:slide2 10s  linear infinite;
 }
 .banner3{
-  animation:slide3 12s linear infinite;
+  animation:slide3 10s linear infinite;
 }
 .banner4{
-  animation:slide4 12s linear infinite;
+  animation:slide4 10s linear infinite;
 }
 /* animation */
 @keyframes slide1 {
+
   0%{
     visibility: visible;
   }
   25%{
-    visibility: hidden;
+    visibility: visible;
   }
   50%{
     visibility: hidden;
@@ -156,4 +158,122 @@ span{
     visibility: visible;
   }
   
+}
+/* food image section */
+.food-text{
+  position:absolute;
+  left:0;
+  top:120%;
+}
+.food1,.food2,.food3, .food4{
+  width:70%;
+  height:50%;
+  position:absolute;
+  left:30%;
+  top:130%;
+  img{
+    width:50%;
+    position: absolute;
+    left:30%;
+    top:90%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+ }
+}
+/* animation food images */
+@keyframes zoom-out {
+  100%{
+    width:80%;
+  }
+}
+/* food animation effect */
+.food1{
+  animation:food1 10s linear infinite;
+}
+.food2{
+  animation:food2 10s  linear infinite;
+}
+.food3{
+  animation:food3 10s  linear infinite;
+}
+.food4{
+  animation:food4 10s  linear infinite;
+}
+/* @keyframes food1 {
+  0%{
+    visibility: visible;
+  }
+  25%{
+    visibility: visible;
+  }
+  50%{
+    visibility: hidden;
+  }
+  75%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+  
+} */
+@keyframes food2 {
+  0%{
+    visibility: hidden;
+  }
+  25%{
+    visibility: hidden;
+  }
+  50%{
+    visibility: visible;
+  }
+  75%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: hidden;
+  }
+  
+}
+@keyframes food3 {
+  0%{
+    visibility: hidden;
+  }
+  25%{
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  75%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden;
+  }
+  
+}
+@keyframes food4 {
+  0%{
+    visibility: hidden;
+  }
+  25%{
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  75%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+/* circle arrows */
+.hobbies{
+  .circle-arrows{
+  position:absolute;
+  top:210%;
+}
 }
