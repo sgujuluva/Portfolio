@@ -3,47 +3,50 @@
   .side-menu {
     display: none;
   }
+  /* hamburger side menu font */
+  header {
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 0.7rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
   /* header logo */
   header {
-    border: 2px solid blue;
-  }
-  .logo {
-    border: 2px solid red;
-    width: 100vw;
+    nav {
+      .logo {
+        width: 60vw;
+        height: 20vh;
+      }
+    }
   }
   /* main-text */
   .main-content {
-       flex-direction: column;
+    flex-direction: column;
   }
   .main-text {
     line-height: 1;
     h3 {
       font-size: 1rem;
-      transform: translateY(10px);
+      animation: none;
     }
     h2 {
       font-size: 1.5rem;
-      color: $my-text-color;
-    }
+         }
     span {
       font-size: 1rem;
-      color: black;
-    }
+         }
     p {
       font-size: 1rem;
-      font-weight: 500;
-      animation: textup 5s linear infinite;
-      transform: translateY(10px);
-    }
+          animation: none;
+         }
   }
-  @keyframes textup {
-    10% {
-      transform: translateY(0px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
+ 
   /* Hire me -button */
   .main-text button {
     width: 90%;
@@ -53,20 +56,27 @@
   /* my image */
   .image img {
     width: 10vw;
+    animation: none;
   }
   /* social-icons */
   .social-icons {
     border: 2px solid pink;
     flex-direction: row;
   }
-/* aboutme page */
-.aboutme{
-    display:flex;
-flex-direction: column;
-p{
-    font-size:0.5rem;
-}
-}
+  /* aboutme page */
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 0.5rem;
+    }
+  }
+  /* skillset page */
+  /* hobbies page */
+  /* contact me page */
+  /* circle-arrows */
+  .circle-arrows {
+  }
 }
 
 @media only screen and (min-width: 750px) {
