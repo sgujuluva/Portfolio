@@ -14,16 +14,16 @@
 span{
     color:$my-text-color;
 }
-/* food-images section */
-.food-images{
+/* /* food-images section */
+/* .food-images{
     display:flex;
     h4{
        text-align: center;
        background-color: $my-text-color;
     }
-}
+} */
 /* garden section */
-.garden-images{
+/* .garden-images{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,9 +32,9 @@ span{
         padding:1%;
     border: 0.2rem solid grey;
 }
-}
+} */
 /* food images */
-.food-images{
+/* .food-images{
     display:flex;
     justify-content: center;
     gap:3rem;
@@ -43,4 +43,20 @@ span{
         padding:3%;
     border: 0.2rem solid grey;
 }
+} */
+
+/* image slider with animation */
+.garden-images{
+  width:70%;
+  height:50%;
+  position:absolute;
+  left:30%;
+  top:50%;
+  img{
+    width:60%;
+    position: absolute;
+    left:30%;
+    top:90%;
+    transform: translate(-50%,-50%);
+  }
 }
