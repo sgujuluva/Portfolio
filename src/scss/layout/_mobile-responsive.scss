@@ -164,7 +164,14 @@
     display: flex;
     flex-direction: column;
   }
-
+.garden-images{
+  img{ width:100vw;
+  height:65vh;}
+ }
+ .food-images{
+  img{ width:100vw;
+    height:65vh;}
+ }
   /* contact me page */
   .icons-container {
     width: 75vw;
@@ -194,14 +201,14 @@
       }
     }
   }
-  /* circle-arrows */
+  /* circle-arrows position adjustment*/
   .contact {
     .circle-arrows {
       margin-top: 10%;
     }
   }
 }
-/* circle arrows */
+/* circle arrows font size adjustment*/
 .circle-arrows {
   a {
     i {
