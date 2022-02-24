@@ -3,11 +3,9 @@
   .side-menu {
     display: none;
   }
-    /* hamburger side menu font */
+  /* hamburger side menu font */
   header {
-    /*   grid-area: header; */
-
-    nav {
+       nav {
       .logo {
         width: 60vw;
         height: 20vh;
@@ -15,8 +13,8 @@
       ul {
         li {
           a {
-            font-size: 0.7rem;
-            font-weight: 700;
+            font-size: 0.8rem;
+            font-weight: 500;
           }
         }
       }
@@ -25,36 +23,38 @@
 
   /* main-text */
   .main-content {
-   width:100vw;
-   height:70vh;
-display:flex;
-flex-direction: column-reverse;
-align-items: center;
-  .main-text{
-    h3{/* welcome my portfolio */
-      font-size: 1rem;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .main-text {
+      h3 {
+        /* welcome my portfolio */
+        font-size: 1rem;
+      }
+      h2 {
+        /* my name */
+        font-size: 1.7rem;
+      }
+      p {
+        /* web developer */
+        font-size: 0.8rem;
+      }
+      button {
+        width: 50%;
+        height: 2rem;
+        font-size: 1rem;
+      }
     }
-    h2{/* my name */
-      font-size: 1.7rem;
+    /* my image */
+    .image img {
+      width: 40vw;
+      animation: none;
     }
-    p{/* web developer */
-      font-size: 0.8rem;
-    }
-    button {
-      width: 50%;
-      height: 2rem;
-      font-size: 1rem;
-    }
-  } 
-/* my image */
-.image img {
-  width: 40vw;
-  animation: none;
   }
-  }
-  
+
   .social-icons {
-    /* grid-area: footer; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -67,17 +67,13 @@ align-items: center;
       }
     }
   }
-
- 
-  
-
   /* aboutme page */
   .aboutme {
     height: 100%;
     display: flex;
     flex-direction: column;
     p {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
     img {
       width: 30%;
@@ -86,17 +82,22 @@ align-items: center;
 
   /* skillset page */
   .myskills {
+    margin:5%;
     .myskills-text {
       p {
         font-size: 0.8rem;
       }
     }
   }
-  .tools li {
-    font-size: 0.8rem;
-  }
-  .skillset h2 {
-    font-size: 1.2rem;
+  .tools{
+    h3{
+      width:100vw;
+     }
+    li{font-size: 0.8rem;}
+     }
+  .skillset  {
+    h2{ font-size: 1.2rem;}
+   
   }
   /* project section */
   .projects {
@@ -134,26 +135,30 @@ align-items: center;
     display: flex;
     flex-direction: column;
   }
-.garden-images{
-  img{ width:100vw;
-  height:65vh;}
- }
- .food-images{
-  img{ width:100vw;
-    height:65vh;}
- }
+  .garden-images {
+    img {
+      width: 100vw;
+      height: 65vh;
+    }
+  }
+  .food-images {
+    img {
+      width: 100vw;
+      height: 65vh;
+    }
+  }
   /* contact me page */
   .icons-container {
     width: 75vw;
-     .icons {
-   /*    margin-left: 5%; */
+    .icons {
       text-align: center;
-      /* padding: 2rem; */
       background: beige;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       border-radius: 0.5rem;
     }
-    h3{font-size: 0.5rem;}
+    h3 {
+      font-size: 0.5rem;
+    }
     p {
       width: 75vw;
     }
