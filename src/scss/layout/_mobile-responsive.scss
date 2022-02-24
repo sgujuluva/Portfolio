@@ -147,6 +147,18 @@ font-size: 0.9rem;
         }
   
   /* contact me page */
+  .icons-container{
+  
+    .icons{
+      margin-left:5%;
+      flex:0 1 auto;
+            text-align: center;
+            padding:2rem;
+            background:black;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+            border-radius: 0.5rem;
+    }
+  }
   /* circle-arrows */
   .circle-arrows {
   }
