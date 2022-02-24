@@ -1,6 +1,6 @@
 @media only screen and (max-width: 450px) {
   /* landing page */
- .side-menu {
+  .side-menu {
     display: none;
   }
   /* grid layout */
@@ -16,12 +16,12 @@
   /* hamburger side menu font */
   header {
     /*   grid-area: header; */
-        
+
     nav {
-        .logo {
-            width: 60vw;
-            height: 20vh;
-          }
+      .logo {
+        width: 60vw;
+        height: 20vh;
+      }
       ul {
         li {
           a {
@@ -32,158 +32,182 @@
       }
     }
   }
-  
+
   /* main-text */
   .main-content {
-      /* grid-area: main; */
-  
-display:flex;
-flex-direction:row-reverse;
-flex-wrap: wrap;
+    /* grid-area: main; */
 
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 95vh;
   }
   .main-text {
-    line-height: 1;
-      h3 { /* welcome to my portfolio */
-      font-size: 1rem;
+    width: 100%;
+    border: 2px solid green;
+    /*  line-height:0.5 rem; */
+
+    h3 {
+      /* welcome to my portfolio */
+      border: 2px solid red;
+      font-size: 0.5rem;
+      height: 10vh;
       animation: none;
     }
-    h2 { /* my name */
-      font-size: 1.5rem;
-         }
+    h2 {
+      /* my name */
+      font-size: 0.7rem;
+      height: 10vh;
+      border: 2px solid blue;
+    }
     span {
-      font-size: 1rem;
-         }
-    p {/* web dev */
-      font-size: 1rem;
-          animation: none;
-         }
+      font-size: 0.5rem;
+    }
+    p {
+      /* web dev */
+      border: 2px solid orchid;
+      font-size: 0.5rem;
+      animation: none;
+      height: 10vh;
+    }
   }
-  .social-icons{
-      /* grid-area: footer; */
-       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      position:absolute;
-      top:97%;
-      height:10%;
-      a{
-          i{
-              font-size: 1.5rem;
-          }
+  .social-icons {
+    /* grid-area: footer; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 97%;
+    height: 10%;
+    a {
+      i {
+        font-size: 1.5rem;
       }
+    }
   }
- 
+
   /* Hire me -button */
-   .main-text button {
-    width: 70%;
+  .main-text button {
+    border: 2px solid black;
+    width: 50%;
     height: 2rem;
     font-size: 1rem;
-  }  
+  }
   /* my image */
   .image img {
-    width: 50vw;
+    border: 2px solid pink;
+    width: 40vw;
     animation: none;
+    padding: 0;
   }
- 
+
   /* aboutme page */
   .aboutme {
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     p {
       font-size: 0.5rem;
     }
-    img{
-      width:30%;
+    img {
+      width: 20%;
     }
   }
+
   /* skillset page */
   .myskills {
-       .myskills-text {
+    .myskills-text {
       p {
         font-size: 0.8rem;
-       }
+      }
     }
   }
   .tools li {
     font-size: 0.8rem;
-}
-.skillset h2{
+  }
+  .skillset h2 {
     font-size: 1.2rem;
-}
-/* project section */
-.projects{
-  
-.box-container{
-    width:80%;
-    .box{
-        width:120%;
-        .img{
-            border:2px solid red;
-      width:50%;
+  }
+  /* project section */
+  .projects {
+    .box-container {
+      width: 80%;
+      .box {
+        width: 120%;
+        .img {
+          border: 2px solid red;
+          width: 50%;
         }
-        h3{
-font-size: 0.9rem;
+        h3 {
+          font-size: 0.9rem;
         }
-        h2{
-            font-size: 1rem;
+        h2 {
+          font-size: 1rem;
         }
-        .icons{
-            font-size: 0.5rem;
-            position: absolute;
-            bottom: 2%;
-            left: 38%;
+        .icons {
+          font-size: 0.5rem;
+          position: absolute;
+          bottom: 2%;
+          left: 38%;
         }
+      }
     }
- }
-}
-/* circle arrows */
-.skillset .circle-arrows {
+  }
+  /* circle arrows */
+  .skillset .circle-arrows {
     margin-top: 10%;
   }
   /* hobbies page */
-  .hobbies{
-      font-size: 0.8rem;
-      margin-left:15%;
-      display:flex;
-      flex-direction:column;
-        }
-  
+  .hobbies {
+    font-size: 0.8rem;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+  }
+
   /* contact me page */
-  .icons-container{
-  
-    .icons{
-      margin-left:5%;
-      flex:0 1 auto;
-            text-align: center;
-            padding:2rem;
-            background:beige;
-            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-            border-radius: 0.5rem;
+  .icons-container {
+    width: 75vw;
+    .icons {
+      margin-left: 5%;
+      text-align: center;
+      padding: 2rem;
+      background: beige;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+    }
+    p {
+      width: 75vw;
     }
   }
-  .forms{
-    form{
-      input{
-        width:90%;
-        &:last-child{
-          width:50%;
+  .forms {
+    form {
+      input {
+        width: 90%;
+        &:last-child {
+          width: 50%;
           margin-left: 25%;
         }
       }
-      textarea{
-        width:90%;
+      textarea {
+        width: 90%;
       }
     }
   }
   /* circle-arrows */
-  .contact{
-  .circle-arrows {
-    margin-top: 10%;
+  .contact {
+    .circle-arrows {
+      margin-top: 10%;
+    }
   }
-  
 }
+/* circle arrows */
+.circle-arrows {
+  a {
+    i {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 750px) {
