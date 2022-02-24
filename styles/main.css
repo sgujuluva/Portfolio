@@ -92,7 +92,6 @@
   flex: 0.3;
   text-align: center;
   padding: 2rem;
-  background: white;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
@@ -511,6 +510,7 @@ span {
 /* my image */
 .image img {
   width: 25vw;
+  border-radius: 50%;
   animation: zoom-out 3s linear infinite;
 }
 
@@ -523,7 +523,7 @@ span {
 .social-icons {
   grid-area: sidebar;
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -638,98 +638,83 @@ body .skillset h2 {
     display: none;
   }
 
-  /* grid layout */
-  /* body {
-    display: grid;
-    grid-template-rows: 15vh 70vh 15vh;
-    grid-template-columns:1fr;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";      
-  } */
   /* hamburger side menu font */
-  header {
-    /*   grid-area: header; */
-  }
   header nav .logo {
     width: 60vw;
     height: 20vh;
   }
   header nav ul li a {
-    font-size: 0.7rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 500;
   }
 
   /* main-text */
   .main-content {
-    /* grid-area: main; */
+    width: 100vw;
+    height: 70vh;
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* my image */
   }
-
-  .main-text {
-    line-height: 1;
-  }
-  .main-text h3 {
-    /* welcome to my portfolio */
+  .main-content .main-text h3 {
+    /* welcome my portfolio */
     font-size: 1rem;
-    animation: none;
   }
-  .main-text h2 {
+  .main-content .main-text h2 {
     /* my name */
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
-  .main-text span {
+  .main-content .main-text p {
+    /* web developer */
+    font-size: 0.8rem;
+  }
+  .main-content .main-text button {
+    width: 50%;
+    height: 2rem;
     font-size: 1rem;
   }
-  .main-text p {
-    /* web dev */
-    font-size: 1rem;
+  .main-content .image img {
+    width: 40vw;
     animation: none;
   }
 
   .social-icons {
-    /* grid-area: footer; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
-    top: 97%;
+    top: 85%;
     height: 10%;
   }
   .social-icons a i {
     font-size: 1.5rem;
   }
 
-  /* Hire me -button */
-  .main-text button {
-    width: 70%;
-    height: 2rem;
-    font-size: 1rem;
-  }
-
-  /* my image */
-  .image img {
-    width: 50vw;
-    animation: none;
-  }
-
   /* aboutme page */
   .aboutme {
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
   .aboutme p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .aboutme img {
+    width: 30%;
   }
 
   /* skillset page */
+  .myskills {
+    margin: 5%;
+  }
   .myskills .myskills-text p {
     font-size: 0.8rem;
   }
 
+  .tools h3 {
+    width: 100vw;
+  }
   .tools li {
     font-size: 0.8rem;
   }
@@ -775,9 +760,54 @@ body .skillset h2 {
     flex-direction: column;
   }
 
+  .garden-images img {
+    width: 100vw;
+    height: 65vh;
+  }
+
+  .food-images img {
+    width: 100vw;
+    height: 65vh;
+  }
+
   /* contact me page */
-  /* circle-arrows */
+  .icons-container {
+    width: 75vw;
+  }
+  .icons-container .icons {
+    text-align: center;
+    background: beige;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  .icons-container p {
+    width: 75vw;
+  }
+
+  .forms form label {
+    font-size: 0.9rem;
+  }
+  .forms form input {
+    width: 90%;
+  }
+  .forms form input:last-child {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .forms form textarea {
+    width: 90%;
+  }
+
+  /* circle-arrows position adjustment*/
+  .contact .circle-arrows {
+    margin-top: 10%;
+  }
 }
+/* circle arrows font size adjustment*/
+.circle-arrows a i {
+  font-size: 1.5rem;
+}
+
 @media only screen and (min-width: 750px) {
   .hamburger {
     display: none;
