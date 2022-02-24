@@ -88,10 +88,14 @@ flex-wrap: wrap;
  
   /* aboutme page */
   .aboutme {
+    height:100%;
     display: flex;
     flex-direction: column;
     p {
       font-size: 0.5rem;
+    }
+    img{
+      width:30%;
     }
   }
   /* skillset page */
