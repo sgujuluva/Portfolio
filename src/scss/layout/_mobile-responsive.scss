@@ -25,49 +25,41 @@
 
   /* main-text */
   .main-content {
-    /* grid-area: main; */
-
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100vw;
-    height: 95vh;
+   width:100vw;
+   height:70vh;
+display:flex;
+flex-direction: column-reverse;
+align-items: center;
+  .main-text{
+    h3{/* welcome my portfolio */
+      font-size: 1rem;
+    }
+    h2{/* my name */
+      font-size: 1.7rem;
+    }
+    p{/* web developer */
+      font-size: 0.8rem;
+    }
+    button {
+      width: 50%;
+      height: 2rem;
+      font-size: 1rem;
+    }
+  } 
+/* my image */
+.image img {
+  width: 40vw;
+  animation: none;
   }
-  .main-text {
-    width: 100%;
-    border: 2px solid green;
-    /*  line-height:0.5 rem; */
-
-    h3 {
-      /* welcome to my portfolio */
-      border: 2px solid red;
-      font-size: 0.5rem;
-      height: 10vh;
-      animation: none;
-    }
-    h2 {
-      /* my name */
-      font-size: 0.7rem;
-      height: 10vh;
-      border: 2px solid blue;
-    }
-    span {
-      font-size: 0.5rem;
-    }
-    p {
-      /* web dev */
-      border: 2px solid orchid;
-      font-size: 0.5rem;
-      animation: none;
-      height: 10vh;
-    }
   }
+  
   .social-icons {
     /* grid-area: footer; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
-    top: 97%;
+    top: 85%;
     height: 10%;
     a {
       i {
@@ -76,20 +68,8 @@
     }
   }
 
-  /* Hire me -button */
-  .main-text button {
-    border: 2px solid black;
-    width: 50%;
-    height: 2rem;
-    font-size: 1rem;
-  }
-  /* my image */
-  .image img {
-    border: 2px solid pink;
-    width: 40vw;
-    animation: none;
-    padding: 0;
-  }
+ 
+  
 
   /* aboutme page */
   .aboutme {
