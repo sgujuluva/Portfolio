@@ -3,17 +3,7 @@
   .side-menu {
     display: none;
   }
-  /* grid layout */
-  /* body {
-    display: grid;
-    grid-template-rows: 15vh 70vh 15vh;
-    grid-template-columns:1fr;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";      
-  } */
-  /* hamburger side menu font */
+    /* hamburger side menu font */
   header {
     /*   grid-area: header; */
 
@@ -176,13 +166,14 @@
   .icons-container {
     width: 75vw;
      .icons {
-      margin-left: 5%;
+   /*    margin-left: 5%; */
       text-align: center;
-      padding: 2rem;
+      /* padding: 2rem; */
       background: beige;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       border-radius: 0.5rem;
     }
+    h3{font-size: 0.5rem;}
     p {
       width: 75vw;
     }
