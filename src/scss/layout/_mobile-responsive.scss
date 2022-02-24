@@ -158,12 +158,12 @@
  }
     p {
       width: 75vw;
-     
-    }
+         }
   
   }
   .forms {
     form {
+      label{font-size: 0.9rem;}
       input {
         width: 90%;
         &:last-child {
