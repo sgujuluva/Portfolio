@@ -154,14 +154,32 @@ font-size: 0.9rem;
       flex:0 1 auto;
             text-align: center;
             padding:2rem;
-            background:black;
+            background:beige;
             box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
             border-radius: 0.5rem;
     }
   }
-  /* circle-arrows */
-  .circle-arrows {
+  .forms{
+    form{
+      input{
+        width:90%;
+        &:last-child{
+          width:50%;
+          margin-left: 25%;
+        }
+      }
+      textarea{
+        width:90%;
+      }
+    }
   }
+  /* circle-arrows */
+  .contact{
+  .circle-arrows {
+    margin-top: 10%;
+  }
+  
+}
 }
 
 @media only screen and (min-width: 750px) {
