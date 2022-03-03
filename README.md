@@ -4,7 +4,7 @@
 
 ---
 
-![Screenshot from Project](./images/readme-portfolio-video.gif)
+![Screenshot from Project](../../images/readme-portfolio-video.gif)
 
 #### Navigation
 
