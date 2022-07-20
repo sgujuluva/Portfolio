@@ -1,0 +1,834 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+/* all html page titles */
+.page-title {
+  margin-top: 3%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* h4{
+    span:first-child{
+      background: orange;
+      height:0.5%;
+      width:3%;
+      position:absolute;
+      left:46%;
+
+    } */
+}
+.page-title h2 span {
+  color: orange;
+}
+.page-title h4 {
+  font-weight: 600;
+}
+.page-title h4:before {
+  content: "--";
+  color: orange;
+}
+.page-title h4:after {
+  content: "--";
+  color: orange;
+}
+
+/* arrows */
+.circle-arrows {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  height: 5%;
+  margin-left: 40%;
+}
+.circle-arrows a {
+  border: 2px solid black;
+  border-radius: 50%;
+  background: black;
+}
+.circle-arrows a i {
+  color: white;
+  font-size: 3rem;
+}
+
+/* aboutme styling */
+.aboutme-page {
+  width: 100vw;
+  height: 90vh;
+}
+
+.aboutme {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutme img {
+  width: 20%;
+  border-radius: 50%;
+}
+.aboutme p {
+  font-size: 1.2rem;
+  line-height: 2;
+  width: 60%;
+}
+.aboutme p span {
+  color: orange;
+}
+
+/* contact page */
+.contact {
+  width: 100vw;
+}
+.contact .icons-container {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact .icons-container .icons {
+  margin-left: 5%;
+  flex: 0.3;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.contact .icons-container .icons i {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: orange;
+  color: white;
+  border-radius: 50%;
+}
+.contact .icons-container .icons i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.contact .icons-container .icons h3 {
+  font-size: 1.5rem;
+  /* padding:0.5rem 0; */
+}
+.contact .icons-container .icons p {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+/* form */
+.forms {
+  margin-top: 5%;
+  gap: 1.5rem;
+}
+.forms form {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  padding: 0 2rem;
+  box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.forms form label {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.forms form input, .forms form textarea {
+  font-size: 1.2rem;
+  margin: 2%;
+  width: 20rem;
+  height: 3rem;
+}
+.forms form input:last-child, .forms form textarea:last-child {
+  width: 10%;
+  background: orange;
+  font-size: 1.2rem;
+  border: none;
+}
+
+/* header menu */
+header {
+  grid-area: header;
+  width: 100vw;
+  height: 20vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav .logo {
+  background-image: url("../images/San-logo.png");
+  background-size: cover;
+  background-position: center center;
+  width: 18vw;
+  height: 15vh;
+}
+header nav ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  color: orange;
+}
+
+/* hamburger menu */
+.hamburger {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 2rem;
+  height: 2rem;
+  /* border: 2px red dashed; */
+}
+
+.hamburger div {
+  width: 2rem;
+  background-color: orange;
+  border-radius: 10%;
+  border: 2px orange solid;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* hobbies container */
+.hobbies {
+  margin-left: 15%;
+  width: 100vw;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.hobbies ul li:hover {
+  width: 20%;
+  color: orange;
+}
+
+/* span */
+span {
+  color: orange;
+}
+
+/* image slider with animation */
+.banner1, .banner2, .banner3, .banner4 {
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+}
+.banner1 img, .banner2 img, .banner3 img, .banner4 img {
+  width: 50%;
+  position: absolute;
+  left: 30%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+/* text on image */
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: beige;
+}
+
+/* animation name */
+.banner1 {
+  animation: slide1 10s linear infinite;
+}
+
+.banner2 {
+  animation: slide2 10s linear infinite;
+}
+
+.banner3 {
+  animation: slide3 10s linear infinite;
+}
+
+.banner4 {
+  animation: slide4 10s linear infinite;
+}
+
+/* animation */
+@keyframes slide1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/* for 2nd image */
+@keyframes slide2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+/* 3rd image */
+@keyframes slide3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+/* 4th image */
+@keyframes slide4 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/* food image section */
+.food-text {
+  position: absolute;
+  left: 0;
+  top: 120%;
+}
+
+.food1, .food2, .food3, .food4 {
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  left: 30%;
+  top: 130%;
+}
+.food1 img, .food2 img, .food3 img, .food4 img {
+  width: 50%;
+  position: absolute;
+  left: 30%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+/* food animation effect */
+.food1 {
+  animation: food1 10s linear infinite;
+}
+
+.food2 {
+  animation: food2 10s linear infinite;
+}
+
+.food3 {
+  animation: food3 10s linear infinite;
+}
+
+.food4 {
+  animation: food4 10s linear infinite;
+}
+
+@keyframes food1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes food2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes food3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes food4 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/* circle arrows */
+.hobbies .circle-arrows {
+  position: absolute;
+  top: 210%;
+}
+
+/* main-content */
+.main-content {
+  grid-area: main;
+  width: 100vw;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-text {
+  line-height: 2;
+}
+.main-text h3 {
+  font-size: 1.5rem;
+  animation: textup 5s linear infinite;
+  transform: translateY(100px);
+}
+.main-text h2 {
+  font-size: 2.3rem;
+  color: orange;
+}
+.main-text span {
+  font-size: 1.5rem;
+  color: black;
+}
+.main-text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  animation: textup 5s linear infinite;
+  transform: translateY(100px);
+}
+
+/* animation on welcome to my portfolio h3 & p */
+@keyframes textup {
+  10% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* Hire me -button */
+.main-text button {
+  margin-top: 5%;
+  width: 50%;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: orange;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* my image */
+.image img {
+  width: 25vw;
+  border-radius: 50%;
+  animation: zoom-out 3s linear infinite;
+}
+
+/* animation image */
+@keyframes zoom-out {
+  100% {
+    width: 80%;
+  }
+}
+.social-icons {
+  grid-area: sidebar;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.social-icons a {
+  color: black;
+}
+.social-icons a i {
+  font-size: 3rem;
+}
+
+/* skill set page */
+body {
+  width: 100vw;
+  height: 100vh;
+  /* heading */
+}
+body .skillset {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+body .skillset h2 {
+  margin: 1%;
+}
+
+/* creative skills section */
+.myskills {
+  margin-left: 2%;
+  line-height: 2;
+}
+.myskills .myskills-text p {
+  font-size: 1.2rem;
+}
+
+/*tools section */
+.tools {
+  width: 20%;
+}
+.tools li {
+  font-size: 1.3rem;
+}
+.tools li:hover {
+  color: orange;
+  font-weight: 600;
+}
+
+/* project section */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .box-container {
+  width: 50%;
+}
+.projects .box-container .box {
+  flex: 1 1 30rem;
+  width: 45rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+  border: 0.2rem solid grey;
+}
+.projects .box-container .box img {
+  padding: 1rem;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  /*    position:relative;
+  z-index:1; */
+}
+
+.projects .box-container .box h3 {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.projects .box-container .box h2 {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 11rem;
+  font-size: 1.52rem;
+  color: orange;
+  text-transform: uppercase;
+}
+
+.projects .icons {
+  position: absolute;
+  bottom: 4%;
+  left: 60%;
+}
+.projects .icons a i {
+  font-size: 1.7rem;
+  color: black;
+}
+.projects .icons a i:hover {
+  background: orange;
+}
+
+/* circle arrows */
+.skillset .circle-arrows {
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 450px) {
+  /* landing page */
+  .side-menu {
+    display: none;
+  }
+
+  /* hamburger side menu font */
+  header nav .logo {
+    width: 60vw;
+    height: 20vh;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  /* main-text */
+  .main-content {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* my image */
+  }
+  .main-content .main-text h3 {
+    /* welcome my portfolio */
+    font-size: 1rem;
+  }
+  .main-content .main-text h2 {
+    /* my name */
+    font-size: 1.7rem;
+  }
+  .main-content .main-text p {
+    /* web developer */
+    font-size: 0.8rem;
+  }
+  .main-content .main-text button {
+    width: 50%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .main-content .image img {
+    width: 40vw;
+    animation: none;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 85%;
+    height: 10%;
+  }
+  .social-icons a i {
+    font-size: 1.5rem;
+  }
+
+  /* aboutme page */
+  .aboutme {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutme p {
+    font-size: 0.8rem;
+  }
+  .aboutme img {
+    width: 30%;
+  }
+
+  /* skillset page */
+  .myskills {
+    margin: 5%;
+  }
+  .myskills .myskills-text p {
+    font-size: 0.8rem;
+  }
+
+  .tools h3 {
+    width: 100vw;
+  }
+  .tools li {
+    font-size: 0.8rem;
+  }
+
+  .skillset h2 {
+    font-size: 1.2rem;
+  }
+
+  /* project section */
+  .projects .box-container {
+    width: 80%;
+  }
+  .projects .box-container .box {
+    width: 120%;
+  }
+  .projects .box-container .box .img {
+    border: 2px solid red;
+    width: 50%;
+  }
+  .projects .box-container .box h3 {
+    font-size: 0.9rem;
+  }
+  .projects .box-container .box h2 {
+    font-size: 1rem;
+  }
+  .projects .box-container .box .icons {
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 2%;
+    left: 38%;
+  }
+
+  /* circle arrows */
+  .skillset .circle-arrows {
+    margin-top: 10%;
+  }
+
+  /* hobbies page */
+  .hobbies {
+    font-size: 0.8rem;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .garden-images img {
+    width: 100vw;
+    height: 65vh;
+  }
+
+  .food-images img {
+    width: 100vw;
+    height: 65vh;
+  }
+
+  /* contact me page */
+  .icons-container {
+    width: 75vw;
+  }
+  .icons-container .icons {
+    text-align: center;
+    background: beige;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  .icons-container p {
+    width: 75vw;
+  }
+
+  .forms form label {
+    font-size: 0.9rem;
+  }
+  .forms form input {
+    width: 90%;
+  }
+  .forms form input:last-child {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .forms form textarea {
+    width: 90%;
+  }
+
+  /* circle-arrows position adjustment*/
+  .contact .circle-arrows {
+    margin-top: 10%;
+  }
+}
+/* circle arrows font size adjustment*/
+.circle-arrows a i {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 750px) {
+  .hamburger {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body grid layout */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-rows: 15vh 85vh;
+  grid-template-columns: 5vw 90vw;
+  grid-template-areas: "header header" "sidebar main";
+}
+
+/*# sourceMappingURL=main.css.map */

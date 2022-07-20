@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome/fontawesome-free-6.0.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"></div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
+        <ul class="side-menu">
+          <li><a href="./html/aboutme.html">About me</a></li>
+          <li><a href="./html/skillset.html">Skill Set</a></li>
+          <li><a href="./html/hobby.html">Hobbies</a></li>
+          <li><a href="./html/contact.html">Contact</a></li>
+        </ul>
+      
+      </nav>
+    </header>
+    <!-- Asidebar  -->
+    <article class="social-icons">
+      <a target="_blank" href="https://github.com/sgujuluva"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </article>
+    <main>
+      <!-- main landing page -->
+      <section class="main-content">
+        <article class="main-text">
+          <h3><span>Welcome</span> to my <span>Portfolio</span></h3>
+          <h2><span>I'm</span> Sangeetha Gujuluva</h2>
+          <p>Web Developer</p>
+          <button>Download CV</button>
+        </article>
+        <article class="image">
+          <img src="./images/sang-img-orange.png" alt="picture" />
+        </article>
+      </section>
+    </main>
+    <!-- Custom scripts, edit above this line -->
+    <script>
+       // this is javascript
+       let clicked = false;
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        clicked = !clicked;
+        console.log(clicked);
+        if (clicked) {
+          //do something only if clocked is true
+          document.querySelector(".side-menu").style.cssText =
+            "display: block;position:absolute;top: 11%;right:-7%;beige;z-index: 1;display:flex;flex-direction:column;justify-content:space-evenly;align-items:left";
+        } else {
+          //do something only if clocked is false
+          document.querySelector(".side-menu").style.cssText = "display: none;";
+        }
+      });
+    </script>
+  </body>
+</html>
